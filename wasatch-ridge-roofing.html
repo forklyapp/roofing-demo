@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wasatch Ridge Roofing — Roofers in Davis County, Utah</title>
+<meta name="description" content="Licensed Davis County roofing contractor. Asphalt, metal, repairs, and insurance storm work. Get a quote in 60 seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --charcoal:#22262A;
+  --slate:#39414A;
+  --orange:#FF6B1A;
+  --orange-dark:#E55A0C;
+  --day:#F5F6F3;
+  --line:#D8DBD5;
+  --ink:#22262A;
+  --muted:#5E6770;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{font-family:'Barlow',sans-serif;color:var(--ink);background:var(--day);line-height:1.6;font-size:16px}
+h1,h2,h3,.disp{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:1.05rem;padding:14px 28px;border-radius:6px;text-decoration:none;border:none;cursor:pointer;transition:transform .12s ease,background .12s ease}
+.btn:active{transform:scale(.97)}
+.btn-orange{background:var(--orange);color:#fff}
+.btn-orange:hover{background:var(--orange-dark)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5)}
+.btn-ghost:hover{border-color:#fff}
+.btn:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:50;background:var(--charcoal);color:#fff;border-bottom:3px solid var(--orange)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.4rem;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo svg{flex:none}
+.topnav{display:flex;gap:26px;align-items:center}
+.topnav a{text-decoration:none;font-weight:600;font-size:.95rem;opacity:.9}
+.topnav a:hover{opacity:1;color:var(--orange)}
+.call-link{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.15rem;color:var(--orange)!important;opacity:1!important;text-decoration:none}
+@media(max-width:760px){.topnav a:not(.call-link){display:none}}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--charcoal) 0%,var(--slate) 100%);color:#fff;position:relative;padding:84px 0 140px}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--orange);font-size:1rem;margin-bottom:14px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;max-width:13ch}
+.hero p{margin:20px 0 30px;font-size:1.15rem;max-width:48ch;color:#D7DBDF}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-shingles{position:absolute;right:-40px;top:40px;opacity:.14;z-index:1}
+@media(max-width:760px){.hero{padding:56px 0 120px}.hero-shingles{display:none}}
+/* pitched roofline divider */
+.pitch{display:block;width:100%;height:70px;margin-top:-70px;position:relative;z-index:3}
+
+/* trust strip */
+.trust{background:var(--day);padding:34px 0 10px}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+.trust .t{border-top:3px solid var(--orange);padding-top:12px}
+.trust .num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.1rem;line-height:1}
+.trust .lab{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+@media(max-width:760px){.trust .wrap{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:72px 0}
+.sec-head{margin-bottom:40px;max-width:60ch}
+.sec-head h2{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800}
+.sec-head p{color:var(--muted);margin-top:10px;font-size:1.05rem}
+
+/* services */
+.services{background:#fff}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.svc{background:var(--day);border:1px solid var(--line);border-radius:8px;padding:26px 22px;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:var(--charcoal)}
+.svc:hover::before{background:var(--orange)}
+.svc h3{font-size:1.35rem;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:.97rem}
+.svc .ico{width:44px;height:44px;margin-bottom:14px;color:var(--orange)}
+
+/* gallery */
+.gallery{background:var(--charcoal);color:#fff}
+.gallery .sec-head p{color:#B9C0C7}
+.g-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.g-card{border-radius:8px;overflow:hidden;background:var(--slate)}
+.g-img{height:200px;display:flex;align-items:flex-end;padding:14px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.95rem}
+.g-img.before{background:repeating-linear-gradient(115deg,#4a4f55 0 18px,#41464c 18px 36px)}
+.g-img.after{background:repeating-linear-gradient(115deg,#2c343c 0 18px,#262d34 18px 36px),linear-gradient(180deg,rgba(255,107,26,.25),transparent)}
+.g-tag{background:rgba(0,0,0,.55);padding:4px 10px;border-radius:4px}
+.g-card .cap{padding:14px 16px;font-size:.92rem;color:#C7CDD3}
+.g-note{margin-top:18px;font-size:.85rem;color:#8A929A}
+
+/* areas */
+.areas{background:#fff}
+.area-tags{display:flex;flex-wrap:wrap;gap:10px}
+.area-tags span{background:var(--day);border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:600;font-size:.95rem}
+
+/* reviews */
+.reviews{background:var(--day)}
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px}
+.stars{color:var(--orange);letter-spacing:2px;margin-bottom:10px}
+.rev p{font-size:.97rem}
+.rev .who{margin-top:14px;font-weight:600;font-size:.9rem;color:var(--muted)}
+
+/* quote chat */
+.quote{background:linear-gradient(160deg,var(--slate),var(--charcoal));color:#fff}
+.quote .sec-head p{color:#C3CAD1}
+.q-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+@media(max-width:860px){.q-layout{grid-template-columns:1fr}}
+.q-points{list-style:none;display:grid;gap:16px}
+.q-points li{display:flex;gap:12px;align-items:flex-start;font-size:1.02rem;color:#D7DBDF}
+.q-points .dot{flex:none;width:26px;height:26px;border-radius:50%;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.95rem;margin-top:2px}
+.chat{background:#fff;color:var(--ink);border-radius:12px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.chat-head{background:var(--charcoal);color:#fff;padding:14px 18px;display:flex;align-items:center;gap:10px}
+.chat-head .pulse{width:9px;height:9px;border-radius:50%;background:#3ED66B;box-shadow:0 0 0 0 rgba(62,214,107,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(62,214,107,.5)}70%{box-shadow:0 0 0 9px rgba(62,214,107,0)}100%{box-shadow:0 0 0 0 rgba(62,214,107,0)}}
+.chat-head strong{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:1.05rem}
+.chat-body{height:380px;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px;background:#F2F3F0}
+.msg{max-width:82%;padding:11px 15px;border-radius:12px;font-size:.96rem;line-height:1.45}
+.msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.msg.user{background:var(--orange);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.msg.summary{background:var(--charcoal);color:#fff;max-width:100%;border-radius:8px}
+.msg.summary h4{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.05em;color:var(--orange);margin-bottom:8px;font-size:1.05rem}
+.msg.summary ul{list-style:none;font-size:.92rem;display:grid;gap:4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-self:flex-start}
+.chip{background:#fff;border:1.5px solid var(--orange);color:var(--orange-dark);border-radius:999px;padding:8px 16px;font-weight:600;font-size:.92rem;cursor:pointer;transition:background .12s,color .12s}
+.chip:hover{background:var(--orange);color:#fff}
+.chat-input{display:flex;border-top:1px solid var(--line);background:#fff}
+.chat-input input{flex:1;border:none;padding:15px 16px;font-size:1rem;font-family:'Barlow',sans-serif;background:transparent}
+.chat-input button{border:none;background:var(--orange);color:#fff;padding:0 22px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1rem;cursor:pointer}
+.chat-input button:hover{background:var(--orange-dark)}
+.typing{display:inline-flex;gap:4px;padding:13px 16px;background:#fff;border:1px solid var(--line);border-radius:12px;border-bottom-left-radius:4px;align-self:flex-start}
+.typing i{width:7px;height:7px;border-radius:50%;background:#A6ADB4;animation:blink 1.2s infinite}
+.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,80%,100%{opacity:.3}40%{opacity:1}}
+
+/* footer */
+footer{background:var(--charcoal);color:#AEB6BD;padding:48px 0 100px;font-size:.92rem}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+@media(max-width:760px){footer .wrap{grid-template-columns:1fr}}
+footer h4{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;color:#fff;margin-bottom:12px;letter-spacing:.05em}
+footer a{text-decoration:none}
+footer a:hover{color:var(--orange)}
+footer ul{list-style:none;display:grid;gap:8px}
+.lic{margin-top:14px;font-size:.82rem;color:#7E868E}
+
+/* sticky mobile call bar */
+.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--orange);color:#fff;text-align:center;padding:15px;font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.2rem;letter-spacing:.05em;text-decoration:none;box-shadow:0 -4px 16px rgba(0,0,0,.25)}
+@media(max-width:760px){.callbar{display:block}}
+</style>
+</head>
+<body>
+
+<nav class="topbar" aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Wasatch Ridge Roofing home">
+      <svg width="30" height="24" viewBox="0 0 30 24" fill="none" aria-hidden="true"><path d="M2 16 L15 3 L28 16" stroke="#FF6B1A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 22 L15 15 L22 22" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Wasatch Ridge Roofing
+    </a>
+    <div class="topnav">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#areas">Service Area</a>
+      <a href="#quote">Get a Quote</a>
+      <a class="call-link" href="tel:8015550134">(801) 555-0134</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="hero-shingles" width="520" height="420" viewBox="0 0 520 420" fill="none" aria-hidden="true">
+    <g stroke="#fff" stroke-width="2">
+      <path d="M0 60 H520 M0 120 H520 M0 180 H520 M0 240 H520 M0 300 H520 M0 360 H520"/>
+      <path d="M60 0 V60 M180 0 V60 M300 0 V60 M420 0 V60 M120 60 V120 M240 60 V120 M360 60 V120 M480 60 V120 M60 120 V180 M180 120 V180 M300 120 V180 M420 120 V180 M120 180 V240 M240 180 V240 M360 180 V240 M480 180 V240 M60 240 V300 M180 240 V300 M300 240 V300 M420 240 V300 M120 300 V360 M240 300 V360 M360 300 V360 M480 300 V360"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="eyebrow">Licensed &amp; Insured · Davis County, Utah</div>
+    <h1>Roofs built for Wasatch weather.</h1>
+    <p>Wind off the lake, hail in May, three feet of snow in January. We build asphalt and metal roofs that handle all of it — and we answer the phone when you call.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-orange" href="#quote">Get a quote in 60 seconds</a>
+      <a class="btn btn-ghost" href="tel:8015550134">Call (801) 555-0134</a>
+    </div>
+  </div>
+</header>
+<svg class="pitch" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,10 0,8 50,0 100,8 100,10" fill="#F5F6F3"/></svg>
+
+<div class="trust" aria-label="Company stats">
+  <div class="wrap">
+    <div class="t"><div class="num">14</div><div class="lab">Years on roofs</div></div>
+    <div class="t"><div class="num">600+</div><div class="lab">Roofs completed</div></div>
+    <div class="t"><div class="num">10 yr</div><div class="lab">Workmanship warranty</div></div>
+    <div class="t"><div class="num">48 hr</div><div class="lab">Storm response</div></div>
+  </div>
+</div>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What we do</h2>
+      <p>Residential roofing, start to finish. No subcontracted mystery crews — the people who quote your roof are the people on it.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12 L12 4 L21 12" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11 V20 H19 V11" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Full Replacement</h3>
+        <p>Tear-off and re-roof with architectural asphalt shingles. Ice and water shield standard on every eave and valley — this is Utah.</p>
+      </div>
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 18 L20 18 M4 13 L20 13 M4 8 L20 8" stroke-linecap="round"/><path d="M7 5 L7 21 M17 5 L17 21" stroke-linecap="round" opacity=".4"/></svg>
+        <h3>Metal Roofing</h3>
+        <p>Standing seam and corrugated steel. Sheds snow, shrugs off hail, lasts 50 years. The right call for cabins and steep pitches.</p>
+      </div>
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4 L20 10 L10 20 L4 20 L4 14 Z" stroke-linejoin="round"/><path d="M12 6 L18 12" stroke-linecap="round"/></svg>
+        <h3>Repairs &amp; Leaks</h3>
+        <p>Missing shingles, flashing failures, vent boots, mystery drips. Most repairs diagnosed and fixed in a single visit.</p>
+      </div>
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 L6 13 L11 13 L9 22 L18 9 L13 9 Z" stroke-linejoin="round"/></svg>
+        <h3>Storm &amp; Insurance Work</h3>
+        <p>Hail and wind damage documented properly the first time. We meet your adjuster on the roof and speak their language.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Recent work</h2>
+      <p>Every roof photographed before, during, and after. You get the full set when we're done — useful for insurance and resale.</p>
+    </div>
+    <div class="g-grid">
+      <div class="g-card">
+        <div class="g-img before"><span class="g-tag">Before — hail damage</span></div>
+        <div class="cap">Layton · 28 sq architectural asphalt · insurance claim, full replacement in 2 days</div>
+      </div>
+      <div class="g-card">
+        <div class="g-img after"><span class="g-tag">After — standing seam</span></div>
+        <div class="cap">Kaysville · 6/12 pitch metal re-roof · snow guards over both entries</div>
+      </div>
+      <div class="g-card">
+        <div class="g-img after"><span class="g-tag">After — full tear-off</span></div>
+        <div class="cap">Clearfield · 1998 build, two layers removed · new deck sheathing on the north face</div>
+      </div>
+    </div>
+    <p class="g-note">Demo note: placeholder graphics shown — your real before/after photos go here.</p>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Where we work</h2>
+      <p>Based in Clearfield. If you can see the Wasatch Front from your roof, we probably cover you.</p>
+    </div>
+    <div class="area-tags">
+      <span>Clearfield</span><span>Layton</span><span>Syracuse</span><span>Kaysville</span><span>Farmington</span><span>Clinton</span><span>Roy</span><span>Ogden</span><span>Bountiful</span><span>West Point</span>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What homeowners say</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"They tarped our roof the same night the windstorm hit, then handled the whole insurance claim. New roof on in two days."</p>
+        <div class="who">M. Hansen · Layton</div>
+      </div>
+      <div class="rev">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Three bids, theirs was the only one that itemized everything. No surprises on the invoice, crew cleaned up like they were never here."</p>
+        <div class="who">D. Whitaker · Syracuse</div>
+      </div>
+      <div class="rev">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Found the leak two other companies missed — a flashing issue, fixed same visit for a fraction of what I was quoted elsewhere."</p>
+        <div class="who">R. Calderon · Kaysville</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Get a quote in 60 seconds</h2>
+      <p>Answer a few questions and we'll text you a ballpark range today — then schedule a free on-roof inspection to firm it up.</p>
+    </div>
+    <div class="q-layout">
+      <ul class="q-points">
+        <li><span class="dot">1</span><span><strong>Tell us about the job.</strong> Our smart intake asks the same questions our estimator would — roof type, size, what's going on up there.</span></li>
+        <li><span class="dot">2</span><span><strong>Get a ballpark fast.</strong> No waiting three days for a callback. You'll hear from us the same day, usually within the hour.</span></li>
+        <li><span class="dot">3</span><span><strong>Free inspection, real number.</strong> We get on the roof, photograph everything, and hand you an itemized quote. No pressure, no games.</span></li>
+      </ul>
+      <div class="chat" aria-label="Quote request chat">
+        <div class="chat-head"><span class="pulse" aria-hidden="true"></span><strong>Quote Assistant</strong><span style="margin-left:auto;font-size:.8rem;opacity:.7">replies instantly</span></div>
+        <div class="chat-body" id="chatBody" aria-live="polite"></div>
+        <div class="chat-input">
+          <input type="text" id="chatInput" placeholder="Type your answer…" aria-label="Your answer" autocomplete="off">
+          <button id="chatSend" type="button">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Wasatch Ridge Roofing</h4>
+      <p>Residential roofing for Davis and Weber County. Licensed, insured, and on your roof when we say we'll be.</p>
+      <p class="lic">UT Contractor License #0000000-5501 · Fully insured · Demo site — not a real business</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:8015550134">(801) 555-0134</a></li>
+        <li><a href="mailto:quotes@wasatchridgeroofing.com">quotes@wasatchridgeroofing.com</a></li>
+        <li>Clearfield, Utah</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Mon–Fri · 7am–6pm</li>
+        <li>Sat · 8am–2pm</li>
+        <li>24/7 storm emergency line</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<a class="callbar" href="tel:8015550134">📞 Tap to call — (801) 555-0134</a>
+
+<script>
+(function(){
+  const body = document.getElementById('chatBody');
+  const input = document.getElementById('chatInput');
+  const send = document.getElementById('chatSend');
+  const state = { step:0, answers:{} };
+
+  // Scripted intake flow. In the production version this is replaced by a
+  // serverless endpoint calling the Claude API, so follow-ups adapt to any answer.
+  const flow = [
+    { key:'job',     q:"Hi! I can get you a ballpark roof quote in about a minute. What's going on with your roof?", chips:["Need a full replacement","Leak / repair","Storm or hail damage","Just exploring options"] },
+    { key:'type',    q:"Got it. What kind of roof is it currently?", chips:["Asphalt shingles","Metal","Wood shake","Not sure"] },
+    { key:'stories', q:"How many stories is the home?", chips:["1 story","2 stories","3+ / steep pitch"] },
+    { key:'age',     q:"Roughly how old is the roof?", chips:["Under 10 years","10–20 years","20+ years","No idea"] },
+    { key:'timing',  q:"When are you hoping to get this done?", chips:["ASAP — it's urgent","Within a month","This season","Just budgeting"] },
+    { key:'name',    q:"Almost done. What's your name?", chips:null },
+    { key:'phone',   q:"And the best number to text your ballpark to?", chips:null }
+  ];
+
+  function el(cls, html){ const d=document.createElement('div'); d.className=cls; d.innerHTML=html; return d; }
+  function scroll(){ body.scrollTop = body.scrollHeight; }
+
+  function botSay(html, then){
+    const t = el('typing','<i></i><i></i><i></i>');
+    body.appendChild(t); scroll();
+    setTimeout(()=>{ t.remove(); body.appendChild(el('msg bot', html)); scroll(); if(then) then(); }, 650);
+  }
+
+  function showChips(options){
+    const c = document.createElement('div'); c.className='chips';
+    options.forEach(o=>{
+      const b=document.createElement('button'); b.type='button'; b.className='chip'; b.textContent=o;
+      b.onclick=()=>{ c.remove(); userSay(o); };
+      c.appendChild(b);
+    });
+    body.appendChild(c); scroll();
+  }
+
+  function ask(){
+    const step = flow[state.step];
+    botSay(step.q, ()=>{ if(step.chips) showChips(step.chips); else input.focus(); });
+  }
+
+  function userSay(text){
+    if(!text.trim()) return;
+    body.appendChild(el('msg user', escapeHtml(text))); scroll();
+    state.answers[flow[state.step].key]=text.trim();
+    state.step++;
+    if(state.step < flow.length){ ask(); } else { finish(); }
+  }
+
+  function finish(){
+    const a = state.answers;
+    botSay("Perfect — that's everything. Here's what we'll send to the estimator:", ()=>{
+      const s = el('msg summary',
+        '<h4>Lead Summary · sent to crew</h4><ul>'+
+        '<li><strong>Job:</strong> '+escapeHtml(a.job)+'</li>'+
+        '<li><strong>Current roof:</strong> '+escapeHtml(a.type)+'</li>'+
+        '<li><strong>Home:</strong> '+escapeHtml(a.stories)+'</li>'+
+        '<li><strong>Roof age:</strong> '+escapeHtml(a.age)+'</li>'+
+        '<li><strong>Timeline:</strong> '+escapeHtml(a.timing)+'</li>'+
+        '<li><strong>Contact:</strong> '+escapeHtml(a.name)+' · '+escapeHtml(a.phone)+'</li></ul>');
+      body.appendChild(s); scroll();
+      botSay("Thanks, "+escapeHtml(a.name.split(' ')[0])+"! 🎉 You'll get a text with your ballpark today. If it's urgent, call us right now at <a href='tel:8015550134'><strong>(801) 555-0134</strong></a>.");
+    });
+  }
+
+  function escapeHtml(s){ return s.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  send.addEventListener('click', ()=>{ userSay(input.value); input.value=''; });
+  input.addEventListener('keydown', e=>{ if(e.key==='Enter'){ userSay(input.value); input.value=''; } });
+
+  ask();
+})();
+</script>
+</body>
+</html>
